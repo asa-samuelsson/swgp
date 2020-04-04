@@ -1,0 +1,251 @@
+html, body, div, h1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background:#fff;
+  font-family: 'Public Sans', sans-serif;
+  font-size: 19px;
+  color: #1B4F72;
+  line-height: 1.5;
+  padding:0;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+#header {
+  position: absolute;
+  z-index: 1;
+  width: 100vw;
+  background: rgba(6,21,32,.7);
+}
+#header, .topimage {
+  height:100vh;
+  min-height: 550px;
+  padding-bottom: 20px;
+  margin-bottom: 0;
+}
+.topimage {
+  background: url(surtees.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index:0;
+}
+.nav {
+  position: absolute;
+  color:#fff;
+  top: -20px;
+  padding:0;
+  width: 100vw;
+  z-index: 3;
+  display: block;
+  text-align: center;
+}
+.nav li {
+  display: inline-block;
+  font-weight: 300;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  width: auto;
+  background: rgba(6,21,32,.8);
+  padding: 10px;
+  margin: 0;
+}
+.nav a {
+  color:#fff;
+  border-color: #666;
+}
+
+h1 {
+  position: relative;
+  top: 50%;
+  display: block;
+  width: 320px;
+  margin: -120px auto 0;
+  color:#fff;
+}
+h2 {
+  display: none;
+}
+h3 {
+  font-size: 28px;
+  line-height: 1.25;
+  margin-bottom: 20px;
+  display: block;
+}
+p {
+  margin:1em 0;
+  font-weight: 300;
+}
+p span {
+  text-transform: uppercase;
+  font-weight: 700;
+  color:#1B4F72;
+}
+ul {
+  list-style: none;
+  font-weight: 300;
+}
+li {
+  width:auto;
+  font-size: 14px;
+}
+.fine {
+  font-size: 14px;
+}
+a {
+  color: #1B4F72;
+  line-height: 1.15;
+  border-bottom: 1px solid #68A8D3;
+  text-decoration: none;
+  font: inherit;
+}
+.photos a:hover,
+.info a:hover  {
+  border-color:#BBCEDB;
+}
+
+.text ul {
+  justify-content: center;
+  min-width: 160px;
+  margin:24px 0 0 40px;
+  padding-left: 40px;
+  border-left: 1px solid #BBCEDB;
+}
+.text ul li {
+  display: block;
+}
+.text ul li:first-child {
+  font-weight: 700;
+}
+
+.photos, .story {
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  width: 100vw;
+  max-width: 1100px;
+  padding-top: 0;
+}
+.text {
+  padding: 10px 40px 20px;
+  max-width: 800px;
+  margin: 0 auto 80px;
+  display: flex;
+  position: relative;
+  z-index: 1;
+}
+.story .text {
+  position: relative;
+  z-index: 1;
+  max-width: 880px;
+  width: 1000px;
+}
+.story .text div {
+  width: 50%;
+  padding: 20px 40px 0;
+}
+
+.photo {
+  display: block;
+}
+.photo img {
+  display: block;
+  width: 100vw;
+  max-width: 800px;
+  margin:0 auto 30px;
+  outline: 16px solid #fff;
+  box-shadow: 4px 8px 30px rgba(6,21,32,.5);
+}
+#image2 .photo img {
+  max-width: 530px;
+}
+
+
+.info {
+  margin: 0 auto;
+  background: #f1f1f1;
+  padding: 80px 0;
+}
+.info .text {
+  display: block;
+}
+
+.image .text p::first-letter,
+.firstp::first-letter  {
+  font-family: "Bungee Outline";
+  font-weight: normal;
+  font-size: 5.1em;
+  display: block;
+  float:left;
+  line-height: 1;
+  margin: -5px 10px -10px 0;
+}
+
+@media only screen and (min-width: 900px) {
+  #image2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 130px;
+    padding:0 40px;
+  }
+  #image2 .text {
+    display: block;
+    margin:0;
+    max-width: 500px;
+    padding:0 0 0 60px;
+  }
+  #image2 .text ul {
+    padding-left: 0;
+    margin: 30px 0;
+    border-left: 0;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .story .text {
+    width:840px;
+  }
+  .story .text div {
+    width:840px;
+    padding: 20px 36px 0;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .story .text {
+    display: block;
+    width:auto;
+    padding:40px 40px 80px;
+  }
+  .story .text div {
+    width:auto;
+    max-width:600px;
+    padding:0;
+    margin: 0 auto;
+  }
+  .text ul {
+    min-width: 120px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .text {
+    display: block;
+    margin-bottom: 50px;
+  }
+  .text ul {
+    padding-left: 0;
+    margin: 30px 0;
+    border-left: 0;
+  }
+}
