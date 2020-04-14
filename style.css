@@ -30,7 +30,7 @@ body {
   height:100vh;
   min-height: 550px;
   padding-bottom: 20px;
-  margin-bottom: 0;
+  margin-bottom: 30px;
 }
 .topimage {
   background: url(surtees.jpg);
@@ -164,7 +164,7 @@ a {
   max-width: 800px;
   margin:0 auto 30px;
   outline: 16px solid #fff;
-  box-shadow: 4px 8px 30px rgba(6,21,32,.5);
+  box-shadow: 4px 8px 30px rgba(6,21,32,.25);
 }
 #image2 .photo img {
   max-width: 530px;
