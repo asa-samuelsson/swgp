@@ -164,10 +164,15 @@ a {
   max-width: 800px;
   margin:0 auto 30px;
   outline: 16px solid #fff;
-  box-shadow: 4px 8px 30px rgba(6,21,32,.25);
+  box-shadow: 0 8px 30px rgba(6,21,32,.15);
 }
 #image2 .photo img {
-  max-width: 530px;
+  max-width: 490px;
+}
+#image2 .text ul {
+  border-top: 1px solid #BBCEDB;
+  max-width:150px;
+  padding-top:30px;
 }
 
 
@@ -206,7 +211,7 @@ a {
   }
   #image2 .text ul {
     padding-left: 0;
-    margin: 30px 0;
+    margin: 40px 0;
     border-left: 0;
   }
 }
@@ -235,6 +240,11 @@ a {
   }
   .text ul {
     min-width: 120px;
+  }
+  #image2 .text ul {
+    border-top: 0;
+    max-width:100%;
+    padding-top:0;
   }
 }
 
