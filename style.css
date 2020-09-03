@@ -367,6 +367,9 @@ input.invalid:not(:focus) {
   padding:9px;
   outline: none;
 }
+input::placeholder {
+  color:#bbb;
+}
 
 p.error {display: none; color:#E32636;}
 p.error.active {display: block;}

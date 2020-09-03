@@ -221,11 +221,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="info" id="order">
     <div class="text">
       <h3>Order information</h3>
-      <p>Prices include shipping within the EU only. Photos in stock will be shipped within three days. Photos not in stock might take up to two weeks extra.</p>
-      <p>Payment by Swish or Paypal, details provided in confirmation e-mail.</p>
       <p>This is a private non-profit initiative. All profits, only excluding the costs for printing, postage and packaging, will go to organisations fighting neurological disorders –
       <a href="https://www.hjarnfonden.se/">Hjärnfonden</a> and Jackie Stewart's amazing initiative
       <a href="https://www.raceagainstdementia.com/">Race Against Dementia</a>.</p>
+      <p>Prices include shipping within the EU only. Photos in stock will be shipped within three days. Photos not in stock might take up to two weeks extra.</p>
+      <p>Payment by Swish or Paypal, details provided in confirmation e-mail.</p>
       <p>Please <a href="mailto:asa.samuelsson@me.com">get in touch</a> if you have any questions.</p>
       <br>
       <div class="fine">
@@ -273,9 +273,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <p>Your name:</p>
             <input type="text" name="name" autocomplete="name" required>
           <p>Your address:</p>
-            <input type="text" name="address-line1" required autocomplete="shipping street-address">
-            <input type="text" name="address-line2" required autocomplete="shipping postal-code shipping locality">
-            <input type="text" name="address-line3" autocomplete="shipping country">
+            <input type="text" placeholder="Line 1" name="address-line1" required>
+            <input type="text" placeholder="Line 2" name="address-line2" required>
+            <input type="text" placeholder="Line 3 (optional)" name="address-line3">
           <p>Preferred payment metod:</p>
             <input type="radio" name="payment" value="swish" id="swish"><label for="swish">Swish</label><br>
             <input type="radio" name="payment" value="paypal" id="paypal"><label for="paypal">Paypal</label>
