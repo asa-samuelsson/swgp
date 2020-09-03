@@ -23,8 +23,6 @@
   <meta property="og:description" content="Photos by Sven-Olof Samuelsson" />
   <meta property="og:image" content="surtees.jpg" />
 
-  <script src="cart-localstorage.min.js" type="text/javascript"></script>
-
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -32,7 +30,6 @@
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<div class="page">
 
   <div id="header">
     <h1>
@@ -45,7 +42,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <ul class="nav">
     <li><a href="#story">The story</a></li>
     <li><a href="#photos">The photos</a></li>
-    <li><a href="#order">Order info</a></li>
+    <li><a href="#order">How to order</a></li>
   </ul>
 
   <div class="story" id="story">
@@ -81,7 +78,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <h2>The photos</h2>
 
-    <div class="image" id="jackiestewart">
+    <div class="image" id="image1">
       <div class="photo">
         <img src="jackiestewart.jpg" alt="Jackie Stewart">
       </div>
@@ -95,9 +92,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li>30x20 cm</li>
           <li>€30 / 300 SEK*</li>
           <li>In stock</li>
-          <li><button type="button" onClick="cartLS.add({id: 'jackiestewart', name: 'Jackie Stewart', price: 300})">Add to cart</button>
-          <a href="#cart">Go to cart</a>
-          </li>
+          <li><a href="#order">Order info</a></li>
         </ul>
       </div>
     </div>
@@ -115,13 +110,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li>20x30 cm</li>
           <li>€30 / 300 SEK*</li>
           <li>In stock</li>
-          <li><button type="button" onClick="cartLS.add({id: 'ronniepeterson', name: 'Ronnie Peterson', price: 300})">Add to cart</button>
-          <a href="#cart">Go to cart</a></li>
+          <li><a href="#order">Order info</a></li>
         </ul>
       </div>
     </div>
 
-    <div class="image" id="grahamhill">
+    <div class="image" id="image3">
       <div class="photo">
         <img src="grahamhill.jpg" alt="Graham Hill">
       </div>
@@ -135,13 +129,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li>30x20 cm</li>
           <li>€30 / 300 SEK*</li>
           <li>In stock</li>
-          <li><button type="button" onClick="cartLS.add({id: 'grahamhill', name: 'Graham Hill', price: 300})">Add to cart</button>
-          <a href="#cart">Go to cart</a></li>
+          <li><a href="#order">Order info</a></li>
         </ul>
       </div>
     </div>
 
-    <div class="image" id="emersonfittipaldi">
+    <div class="image" id="image4">
       <div class="photo">
         <img src="emersonfittipaldi.jpg" alt="Emerson Fittipaldi's Lotus">
       </div>
@@ -154,13 +147,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li>30x20 cm</li>
           <li>€30 / 300 SEK*</li>
           <li>In stock</li>
-          <li><button type="button" onClick="cartLS.add({id: 'emersonfittipaldi', name: 'Emerson Fittipaldi (car)', price: 300})">Add to cart</button>
-          <a href="#cart">Go to cart</a></li>
+          <li><a href="#order">Order info</a></li>
         </ul>
       </div>
     </div>
 
-    <div class="image" id="ronniepeterson-2">
+    <div class="image" id="image5">
       <div class="photo">
         <img src="ronniepeterson-2.jpg" alt="Ronnie Peterson's Lotus">
       </div>
@@ -173,13 +165,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li>30x20 cm</li>
           <li>€30 / 300 SEK*</li>
           <li>In stock</li>
-          <li><button type="button" onClick="cartLS.add({id: 'ronniepeterson-2', name: 'Ronnie Peterson (car)', price: 300})">Add to cart</button>
-          <a href="#cart">Go to cart</a></li>
+          <li><a href="#order">Order info</a></li>
         </ul>
       </div>
     </div>
 
-    <div class="image" id="lotus">
+    <div class="image" id="image6">
       <div class="photo">
         <img src="lotus.jpg" alt="The Lotus Garage">
       </div>
@@ -192,13 +183,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li>30x20 cm</li>
           <li>€30 / 300 SEK*</li>
           <li>In stock</li>
-          <li><button type="button" onClick="cartLS.add({id: 'lotus', name: 'Lotus garage', price: 300})">Add to cart</button>
-          <a href="#cart">Go to cart</a></li>
+          <li><a href="#order">Order info</a></li>
         </ul>
       </div>
     </div>
 
-    <div class="image" id="surtees">
+    <div class="image" id="image7">
       <div class="photo">
         <img src="surtees.jpg" alt="Surtees mechanics">
       </div>
@@ -210,8 +200,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li>30x20 cm</li>
           <li>€30 / 300 SEK*</li>
           <li>In stock</li>
-          <li><button type="button" onClick="cartLS.add({id: 'surtees', name: 'Surtees mechanics', price: 300})">Add to cart</button>
-          <a href="#cart">Go to cart</a></li>
+          <li><a href="#order">Order info</a></li>
         </ul>
       </div>
     </div>
@@ -220,146 +209,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <div class="info" id="order">
     <div class="text">
-      <h3>Order information</h3>
-      <p>This is a private non-profit initiative. All profits, only excluding the costs for printing, postage and packaging, will go to organisations fighting neurological disorders –
-      <a href="https://www.hjarnfonden.se/">Hjärnfonden</a> and Jackie Stewart's amazing initiative
+      <h3>How to order</h3>
+      <p>Please <a href="mailto:asa.samuelsson@me.com">get in touch</a> if you're interested in buying prints.</p>
+      <p>Photos in stock will be shipped within 3 days. Photos not in stock or custom sizes might take up to 1-2 weeks extra.</p>
+      <p>All profits, only excluding the costs for printing, postage and packaging, will go to organisations fighting neurological disorders –
+      <a href="https://www.hjarnfonden.se/">Hjärnfonden</a>
+      and Jackie Stewart's amazing initiative
       <a href="https://www.raceagainstdementia.com/">Race Against Dementia</a>.</p>
-      <p>Prices include shipping within the EU only. Photos in stock will be shipped within three days. Photos not in stock might take up to two weeks extra.</p>
-      <p>Payment by Swish or Paypal, details provided in confirmation e-mail.</p>
-      <p>Please <a href="mailto:asa.samuelsson@me.com">get in touch</a> if you have any questions.</p>
       <br>
       <div class="fine">
+        <p>*) 1 print = €30 / 300 SEK, 2 prints or more = €25 / 250 SEK each.</p>
         <p>Paper: Matte Fujicolor Crystal Archive Supreme HD</p>
-        <p>P.S.: The prints make lovely photo walls (<a href="https://www.instagram.com/p/BwueW8XBlcA/?utm_source=ig_web_copy_link">photo evidence #1</a>
+        <p>Larger prints will be available upon request, up to 60x40 cm.</p>
+        <p>Prices include shipping within the EU only.</p>
+        <p>P.S.: The prints go very well with
+          <a href="https://www.granit.com/se/fotoram-30x40-cm-svart">this frame</a>
+          and <a href="https://www.granit.com/se/passepartout-30x40-cm-vit">this passepartout</a>
+          from Granit (<a href="https://www.instagram.com/p/BwueW8XBlcA/?utm_source=ig_web_copy_link">photo evidence #1</a>
           and <a href="https://www.instagram.com/p/BwjvhZWBdMg/?utm_source=ig_web_copy_link">photo evidence #2</a>!).</p>
       </div>
     </div>
+
   </div>
-
-  <div id="cart">
-    <div class="text">
-
-      <div>
-        <h4>Shopping cart</h4>
-        <table>
-          <tbody class="cart">
-          </tbody>
-        </table>
-        <p><span class="total"></span></p>
-        <div class="fine">
-          <h4>How to order</h4>
-            <p>Fill out and post the form. Within 24h you will get a
-            confirmation e-mail containing payment details.
-            Your order will be shipped after I have received
-            your payment.</p>
-            <p>As soon as you let me know that you have received
-            your prints, and that they are in expected condition,
-            the profits will be donated to Hjärnfonden or Race Against Dementia.
-            Please note that after that no refunds will be possible.</p>
-        </div>
-      </div>
-
-      <div>
-        <form
-          action="https://formspree.io/xeqrbndy"
-          method="POST"
-          autocomplete="on"
-          id="checkout"
-        >
-          <h4>Send an inquiry</h4>
-          <p class="error">There are errors below, please review the form and try again.</p>
-          <p>Your email:</p>
-            <input type="email" name="_replyto" autocomplete="email" required pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$">
-          <p>Your name:</p>
-            <input type="text" name="name" autocomplete="name" required>
-          <p>Your address:</p>
-            <input type="text" placeholder="Line 1" name="address-line1" required>
-            <input type="text" placeholder="Line 2" name="address-line2" required>
-            <input type="text" placeholder="Line 3 (optional)" name="address-line3">
-          <p>Preferred payment metod:</p>
-            <input type="radio" name="payment" value="swish" id="swish"><label for="swish">Swish</label><br>
-            <input type="radio" name="payment" value="paypal" id="paypal"><label for="paypal">Paypal</label>
-          <p>Preferred charity:</p>
-            <input type="radio" name="charity" value="hjarnfonden" id="hjarnfonden"><label for="hjarnfonden">Hjärnfonden</label><br>
-            <input type="radio" name="charity" value="raceagainstdementia" id="raceagainstdementia"><label for="raceagainstdementia">Race Against Dementia</label>
-          <p>Message (optional):</p>
-            <textarea name="message"></textarea>
-          <input type="hidden" name="items" id="items" value="">
-
-          <button type="submit">Send</button>
-        </form>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="sticky-cart"><p class="contents"></p></div>
-
-</div>
-
-	<script>
-		function renderCart(items) {
-			const $order = document.querySelector("#cart")
-			const $cart = document.querySelector(".cart")
-			const $contents = document.querySelector(".contents")
-			const $total = document.querySelector(".total")
-
-			$cart.innerHTML = items.map((item) =>
-      `<tr>
-						<td class="img"><img src="${item.id}.jpg" alt="${item.name}"></td>
-						<td class="quantity">x ${item.quantity}</td>
-						<td class="buttons">
-							<button type="button" onClick="cartLS.quantity('${item.id}',-1)">-</button>
-							<button type="button" onClick="cartLS.quantity('${item.id}',1)">+</button>
-              <button type="button" onClick="cartLS.remove('${item.id}')">X</button></td>
-					</tr>`).join("")
-
-      var orderitems = items.map((item) => `${item.quantity}*${item.id};`).join("")
-
-      document.getElementById("items").setAttribute("value",orderitems);
-			$total.innerHTML = cartLS.total()/300 + " print(s) x €30 / 300 SEK<br>Total amount to pay: <strong>€" + cartLS.total()/10 + " / " + cartLS.total() + " SEK</strong>"
-      $contents.innerHTML = "<a href='#cart'><img src='cart.svg' alt='Shopping cart'><span>" + cartLS.total()/300 + "</span></a>"
-
-      if (items.length == 0) {
-        document.body.classList.remove("cart-active");
-      } else {
-        document.body.classList.add("cart-active");
-      }
-
-      const images = document.querySelectorAll('.image');
-      var i;
-      for (i = 0; i < images.length; i++) {
-        var button = images[i].querySelector('button');
-        if (cartLS.exists(images[i].id)) {
-          images[i].classList.add("in-cart");
-        } else {
-          images[i].classList.remove("in-cart");
-        }
-      }
-
-    }
-		renderCart(cartLS.list())
-		cartLS.onChange(renderCart)
-
-    var invalidClassName = 'invalid'
-    var inputs = document.querySelectorAll('input, select, textarea')
-    inputs.forEach(function (input) {
-      // Add a css class on submit when the input is invalid.
-      input.addEventListener('invalid', function () {
-        input.classList.add(invalidClassName)
-        document.querySelector('.error').classList.add('active')
-      })
-
-      // Remove the class when the input becomes valid.
-      // 'input' will fire each time the user types
-      input.addEventListener('input', function () {
-        if (input.validity.valid) {
-          input.classList.remove(invalidClassName)
-        }
-      })
-    })
-
-	</script>
 
 </body>
 </html>
