@@ -151,7 +151,7 @@ a {
 .story .text {
   position: relative;
   z-index: 1;
-  max-width: 880px;
+  max-width: 900px;
   width: 1000px;
 }
 .story .text div {

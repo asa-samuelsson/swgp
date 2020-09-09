@@ -27,10 +27,6 @@
 
 </head>
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T6FC5RZ"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
 
 <div class="page">
 
@@ -95,7 +91,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li>30x20 cm</li>
           <li>€30 / 300 SEK*</li>
           <li>In stock</li>
-          <li><button type="button" onClick="cartLS.add({id: 'jackiestewart', name: 'Jackie Stewart', price: 300})">Add to cart</button>
+          <li><button type="button" onClick="cartLS.add({id: 'jackiestewart', name: 'Jackie Stewart', price: 300}); ga('send', 'event', 'Cart', 'Add', 'jackiestewart');">Add to cart</button>
           <a href="#cart">Go to cart</a>
           </li>
         </ul>
@@ -115,7 +111,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li>20x30 cm</li>
           <li>€30 / 300 SEK*</li>
           <li>In stock</li>
-          <li><button type="button" onClick="cartLS.add({id: 'ronniepeterson', name: 'Ronnie Peterson', price: 300})">Add to cart</button>
+          <li><button type="button" onClick="cartLS.add({id: 'ronniepeterson', name: 'Ronnie Peterson', price: 300}); ga('send', 'event', 'Cart', 'Add', 'ronniepeterson');">Add to cart</button>
           <a href="#cart">Go to cart</a></li>
         </ul>
       </div>
@@ -135,7 +131,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li>30x20 cm</li>
           <li>€30 / 300 SEK*</li>
           <li>In stock</li>
-          <li><button type="button" onClick="cartLS.add({id: 'grahamhill', name: 'Graham Hill', price: 300})">Add to cart</button>
+          <li><button type="button" onClick="cartLS.add({id: 'grahamhill', name: 'Graham Hill', price: 300}); ga('send', 'event', 'Cart', 'Add', 'grahamhill');">Add to cart</button>
           <a href="#cart">Go to cart</a></li>
         </ul>
       </div>
@@ -154,7 +150,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li>30x20 cm</li>
           <li>€30 / 300 SEK*</li>
           <li>In stock</li>
-          <li><button type="button" onClick="cartLS.add({id: 'emersonfittipaldi', name: 'Emerson Fittipaldi (car)', price: 300})">Add to cart</button>
+          <li><button type="button" onClick="cartLS.add({id: 'emersonfittipaldi', name: 'Emerson Fittipaldi (car)', price: 300}); ga('send', 'event', 'Cart', 'Add', 'emersonfittipaldi');">Add to cart</button>
           <a href="#cart">Go to cart</a></li>
         </ul>
       </div>
@@ -173,7 +169,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li>30x20 cm</li>
           <li>€30 / 300 SEK*</li>
           <li>In stock</li>
-          <li><button type="button" onClick="cartLS.add({id: 'ronniepeterson-2', name: 'Ronnie Peterson (car)', price: 300})">Add to cart</button>
+          <li><button type="button" onClick="cartLS.add({id: 'ronniepeterson-2', name: 'Ronnie Peterson (car)', price: 300}); ga('send', 'event', 'Cart', 'Add', 'ronniepeterson-2');">Add to cart</button>
           <a href="#cart">Go to cart</a></li>
         </ul>
       </div>
@@ -192,7 +188,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li>30x20 cm</li>
           <li>€30 / 300 SEK*</li>
           <li>In stock</li>
-          <li><button type="button" onClick="cartLS.add({id: 'lotus', name: 'Lotus garage', price: 300})">Add to cart</button>
+          <li><button type="button" onClick="cartLS.add({id: 'lotus', name: 'Lotus garage', price: 300}); ga('send', 'event', 'Cart', 'Add', 'lotus');">Add to cart</button>
           <a href="#cart">Go to cart</a></li>
         </ul>
       </div>
@@ -210,7 +206,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li>30x20 cm</li>
           <li>€30 / 300 SEK*</li>
           <li>In stock</li>
-          <li><button type="button" onClick="cartLS.add({id: 'surtees', name: 'Surtees mechanics', price: 300})">Add to cart</button>
+          <li><button type="button" onClick="cartLS.add({id: 'surtees', name: 'Surtees mechanics', price: 300}); ga('send', 'event', 'Cart', 'Add', 'surtees');">Add to cart</button>
           <a href="#cart">Go to cart</a></li>
         </ul>
       </div>
@@ -221,9 +217,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="info" id="order">
     <div class="text">
       <h3>Order information</h3>
-      <p>This is a private non-profit initiative. All profits, only excluding the costs for printing, postage and packaging, will go to organisations fighting neurological disorders –
+      <p>This is a private initiative. All profits, only excluding the costs for printing, postage and packaging, will be donated to organisations fighting neurological disorders –
       <a href="https://www.hjarnfonden.se/">Hjärnfonden</a> and Jackie Stewart's amazing initiative
-      <a href="https://www.raceagainstdementia.com/">Race Against Dementia</a>.</p>
+      <a href="https://www.raceagainstdementia.com/">Race&nbsp;Against&nbsp;Dementia</a>.</p>
       <p>Prices include shipping within the EU only. Photos in stock will be shipped within three days. Photos not in stock might take up to two weeks extra.</p>
       <p>Payment by Swish or Paypal, details provided in confirmation e-mail.</p>
       <p>Please <a href="mailto:asa.samuelsson@me.com">get in touch</a> if you have any questions.</p>
@@ -248,13 +244,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p><span class="total"></span></p>
         <div class="fine">
           <h4>How to order</h4>
-            <p>Fill out and post the form. Within 24h you will get a
-            confirmation e-mail containing payment details.
-            Your order will be shipped after I have received
-            your payment.</p>
-            <p>As soon as you let me know that you have received
-            your prints, and that they are in expected condition,
-            the profits will be donated to Hjärnfonden or Race Against Dementia.
+            <p>Fill out and post the form. Within 24h you will get a confirmation e-mail containing payment details.
+            Your order is not binding until I have received your payment, and will be shipped immediately after.</p>
+            <p>As soon as you have received your prints, let me know that everything is in order and
+            the profits will then be donated to Hjärnfonden or Race Against Dementia.
             Please note that after that no refunds will be possible.</p>
         </div>
       </div>
@@ -265,6 +258,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           method="POST"
           autocomplete="on"
           id="checkout"
+          onsubmit="ga('send', 'event', 'Checkout', '');"
         >
           <h4>Send an inquiry</h4>
           <p>Your email:</p>
