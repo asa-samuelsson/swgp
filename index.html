@@ -39,9 +39,9 @@
   <div class="topimage"></div>
 
   <ul class="nav">
-    <li><a href="#story">The story</a></li>
-    <li><a href="#photos">The photos</a></li>
-    <li><a href="#order">Order info</a></li>
+    <li><a href="#story" onclick="gtag('event', 'nav', {'event_category': 'story'});">The story</a></li>
+    <li><a href="#photos" onclick="gtag('event', 'nav', {'event_category': 'photos'});">The photos</a></li>
+    <li><a href="#order" onclick="gtag('event', 'nav', {'event_category': 'order'});">Order info</a></li>
   </ul>
 
   <div class="story" id="story">
@@ -303,7 +303,7 @@
 						<td class="img"><img src="${item.id}.jpg" alt="${item.name}"></td>
 						<td class="quantity">x ${item.quantity}</td>
 						<td class="buttons">
-							<button type="button" onClick="cartLS.quantity('${item.id}',-1)">-</button>
+							<button type="button" onClick="cartLS.quantity('${item.id}',-1);">-</button>
 							<button type="button" onClick="cartLS.quantity('${item.id}',1)">+</button>
               <button type="button" onClick="cartLS.remove('${item.id}')">X</button></td>
 					</tr>`).join("")
