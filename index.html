@@ -303,16 +303,16 @@
 						<td class="img"><img src="${item.id}.jpg" alt="${item.name}"></td>
 						<td class="quantity">x ${item.quantity}</td>
 						<td class="buttons">
-							<button type="button" onClick="cartLS.quantity('${item.id}',-1);">-</button>
-							<button type="button" onClick="cartLS.quantity('${item.id}',1)">+</button>
-              <button type="button" onClick="cartLS.remove('${item.id}')">X</button></td>
+							<button type="button" onClick="cartLS.quantity('${item.id}',-1); gtag(\'event\', \'cart\', {\'event_category\': \'quantity-decrease\', \'event_label\': '${item.id}'});">-</button>
+							<button type="button" onClick="cartLS.quantity('${item.id}',1); gtag(\'event\', \'cart\', {\'event_category\': \'quantity-increase\', \'event_label\': '${item.id}'});">+</button>
+              <button type="button" onClick="cartLS.remove('${item.id}'); gtag(\'event\', \'cart\', {\'event_category\': \'remove\', \'event_label\': '${item.id}'});">X</button></td>
 					</tr>`).join("")
 
       var orderitems = items.map((item) => `${item.quantity}*${item.id};`).join("")
 
       document.getElementById("items").setAttribute("value",orderitems);
 			$total.innerHTML = cartLS.total()/300 + " print(s) x €30 / 300 SEK<br>Total amount to pay: <strong>€" + cartLS.total()/10 + " / " + cartLS.total() + " SEK</strong>"
-      $contents.innerHTML = "<a href='#cart'><img src='cart.svg' alt='Shopping cart'><span>" + cartLS.total()/300 + "</span></a>"
+      $contents.innerHTML = "<a href='#cart' onclick='gtag(\"event\", \"nav\", {\"event_category\": \"order\"});'><img src='cart.svg' alt='Shopping cart'><span>" + cartLS.total()/300 + "</span></a>"
 
       if (items.length == 0) {
         document.body.classList.remove("cart-active");
