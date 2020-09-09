@@ -91,7 +91,7 @@
           <li>30x20 cm</li>
           <li>€30 / 300 SEK*</li>
           <li>In stock</li>
-          <li><button type="button" onClick="cartLS.add({id: 'jackiestewart', name: 'Jackie Stewart', price: 300}); ga('send', 'event', 'Cart', 'Add', 'jackiestewart');">Add to cart</button>
+          <li><button type="button" onClick="cartLS.add({id: 'jackiestewart', name: 'Jackie Stewart', price: 300}); gtag('event', 'cart', {'event_category': 'add', 'event_label': 'jackiestewart'});">Add to cart</button>
           <a href="#cart">Go to cart</a>
           </li>
         </ul>
@@ -111,7 +111,7 @@
           <li>20x30 cm</li>
           <li>€30 / 300 SEK*</li>
           <li>In stock</li>
-          <li><button type="button" onClick="cartLS.add({id: 'ronniepeterson', name: 'Ronnie Peterson', price: 300}); ga('send', 'event', 'Cart', 'Add', 'ronniepeterson');">Add to cart</button>
+          <li><button type="button" onClick="cartLS.add({id: 'ronniepeterson', name: 'Ronnie Peterson', price: 300}); gtag('event', 'cart', {'event_category': 'add', 'event_label': 'ronniepeterson'});">Add to cart</button>
           <a href="#cart">Go to cart</a></li>
         </ul>
       </div>
@@ -131,7 +131,7 @@
           <li>30x20 cm</li>
           <li>€30 / 300 SEK*</li>
           <li>In stock</li>
-          <li><button type="button" onClick="cartLS.add({id: 'grahamhill', name: 'Graham Hill', price: 300}); ga('send', 'event', 'Cart', 'Add', 'grahamhill');">Add to cart</button>
+          <li><button type="button" onClick="cartLS.add({id: 'grahamhill', name: 'Graham Hill', price: 300}); gtag('event', 'cart', {'event_category': 'add', 'event_label': 'grahamhill'});">Add to cart</button>
           <a href="#cart">Go to cart</a></li>
         </ul>
       </div>
@@ -150,7 +150,7 @@
           <li>30x20 cm</li>
           <li>€30 / 300 SEK*</li>
           <li>In stock</li>
-          <li><button type="button" onClick="cartLS.add({id: 'emersonfittipaldi', name: 'Emerson Fittipaldi (car)', price: 300}); ga('send', 'event', 'Cart', 'Add', 'emersonfittipaldi');">Add to cart</button>
+          <li><button type="button" onClick="cartLS.add({id: 'emersonfittipaldi', name: 'Emerson Fittipaldi (car)', price: 300}); gtag('event', 'cart', {'event_category': 'add', 'event_label': 'emersonfittipaldi'});">Add to cart</button>
           <a href="#cart">Go to cart</a></li>
         </ul>
       </div>
@@ -169,7 +169,7 @@
           <li>30x20 cm</li>
           <li>€30 / 300 SEK*</li>
           <li>In stock</li>
-          <li><button type="button" onClick="cartLS.add({id: 'ronniepeterson-2', name: 'Ronnie Peterson (car)', price: 300}); ga('send', 'event', 'Cart', 'Add', 'ronniepeterson-2');">Add to cart</button>
+          <li><button type="button" onClick="cartLS.add({id: 'ronniepeterson-2', name: 'Ronnie Peterson (car)', price: 300}); gtag('event', 'cart', {'event_category': 'add', 'event_label': 'ronniepeterson-2'});">Add to cart</button>
           <a href="#cart">Go to cart</a></li>
         </ul>
       </div>
@@ -188,7 +188,7 @@
           <li>30x20 cm</li>
           <li>€30 / 300 SEK*</li>
           <li>In stock</li>
-          <li><button type="button" onClick="cartLS.add({id: 'lotus', name: 'Lotus garage', price: 300}); ga('send', 'event', 'Cart', 'Add', 'lotus');">Add to cart</button>
+          <li><button type="button" onClick="cartLS.add({id: 'lotus', name: 'Lotus garage', price: 300}); gtag('event', 'cart', {'event_category': 'add', 'event_label': 'lotus'});">Add to cart</button>
           <a href="#cart">Go to cart</a></li>
         </ul>
       </div>
@@ -206,7 +206,7 @@
           <li>30x20 cm</li>
           <li>€30 / 300 SEK*</li>
           <li>In stock</li>
-          <li><button type="button" onClick="cartLS.add({id: 'surtees', name: 'Surtees mechanics', price: 300}); ga('send', 'event', 'Cart', 'Add', 'surtees');">Add to cart</button>
+          <li><button type="button" onClick="cartLS.add({id: 'surtees', name: 'Surtees mechanics', price: 300}); gtag('event', 'cart', {'event_category': 'add', 'event_label': 'surtees'});">Add to cart</button>
           <a href="#cart">Go to cart</a></li>
         </ul>
       </div>
@@ -258,7 +258,7 @@
           method="POST"
           autocomplete="on"
           id="checkout"
-          onsubmit="ga('send', 'event', 'Checkout', '');"
+          onsubmit="gtag('event', 'checkout');"
         >
           <h4>Send an inquiry</h4>
           <p>Your email:</p>
