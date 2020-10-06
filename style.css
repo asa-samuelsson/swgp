@@ -279,7 +279,7 @@ table {
 }
 .sticky-cart {
   position: fixed;
-  top:-60px;
+  top:0;
   left:0;
   height: auto;
   z-index: 100;
@@ -297,8 +297,9 @@ table {
 .cart-active .sticky-cart {
   top: 0;
 }
-.sticky-cart .contents a {
-  background: #1B4F72;
+.sticky-cart .contents > a,
+.sticky-cart .contents > span {
+  background: rgba(6,21,32,.9);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
   text-align: center;
@@ -310,20 +311,26 @@ table {
   line-height: 30px;
   color:#1B4F72;
   text-decoration: underline;
-  box-shadow: 0 0 20px rgba(0,0,0,.2)
+  box-shadow: 0 0 20px rgba(0,0,0,.2);
 }
-.sticky-cart .contents span,
+.sticky-cart .contents span span,
+.sticky-cart .contents a span,
 .sticky-cart .contents img {
   display: inline-block;
 }
-.sticky-cart .contents span {
+.sticky-cart .contents span span,
+.sticky-cart .contents a span {
   font-size: 12px;
-  color: #fff;
-  background: #000;
+  color: #000;
+  background: #68A8D3;
   width:18px;
   height: 18px;
   line-height: 18px;
   border-radius: 20px;
+  opacity: 0;
+}
+.sticky-cart .contents a span {
+  opacity: 1;
 }
 .sticky-cart .contents img {
   width:22px;
@@ -334,13 +341,18 @@ table {
 form {
   margin-left:60px;
 }
+form div {
+  position: relative;
+}
 form p,
 label {
   font-size: 14px;
   margin: 20px 0 0;
 }
 label {
-  padding: 0 10px;
+  display: block;
+  padding: 5px 10px 5px 30px;
+  margin:0;
 }
 input, textarea {
   width: 100%;
@@ -355,6 +367,11 @@ input, textarea {
 }
 input[type="radio"] {
   width: auto;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  position: absolute;
+  top:10px;
 }
 
 form button {

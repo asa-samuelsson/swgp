@@ -89,7 +89,7 @@
         </div>
         <ul>
           <li>30x20 cm</li>
-          <li>€30 / 300 SEK*</li>
+          <li>€30 / 300 SEK</li>
           <li>In stock</li>
           <li><button type="button" onClick="cartLS.add({id: 'jackiestewart', name: 'Jackie Stewart', price: 300}); gtag('event', 'cart', {'event_category': 'add', 'event_label': 'jackiestewart'});">Add to cart</button>
           <a href="#cart">Go to cart</a>
@@ -109,7 +109,7 @@
         </div>
         <ul>
           <li>20x30 cm</li>
-          <li>€30 / 300 SEK*</li>
+          <li>€30 / 300 SEK</li>
           <li>In stock</li>
           <li><button type="button" onClick="cartLS.add({id: 'ronniepeterson', name: 'Ronnie Peterson', price: 300}); gtag('event', 'cart', {'event_category': 'add', 'event_label': 'ronniepeterson'});">Add to cart</button>
           <a href="#cart">Go to cart</a></li>
@@ -129,7 +129,7 @@
         </div>
         <ul>
           <li>30x20 cm</li>
-          <li>€30 / 300 SEK*</li>
+          <li>€30 / 300 SEK</li>
           <li>In stock</li>
           <li><button type="button" onClick="cartLS.add({id: 'grahamhill', name: 'Graham Hill', price: 300}); gtag('event', 'cart', {'event_category': 'add', 'event_label': 'grahamhill'});">Add to cart</button>
           <a href="#cart">Go to cart</a></li>
@@ -148,7 +148,7 @@
         </div>
         <ul>
           <li>30x20 cm</li>
-          <li>€30 / 300 SEK*</li>
+          <li>€30 / 300 SEK</li>
           <li>In stock</li>
           <li><button type="button" onClick="cartLS.add({id: 'emersonfittipaldi', name: 'Emerson Fittipaldi (car)', price: 300}); gtag('event', 'cart', {'event_category': 'add', 'event_label': 'emersonfittipaldi'});">Add to cart</button>
           <a href="#cart">Go to cart</a></li>
@@ -167,7 +167,7 @@
         </div>
         <ul>
           <li>30x20 cm</li>
-          <li>€30 / 300 SEK*</li>
+          <li>€30 / 300 SEK</li>
           <li>In stock</li>
           <li><button type="button" onClick="cartLS.add({id: 'ronniepeterson-2', name: 'Ronnie Peterson (car)', price: 300}); gtag('event', 'cart', {'event_category': 'add', 'event_label': 'ronniepeterson-2'});">Add to cart</button>
           <a href="#cart">Go to cart</a></li>
@@ -186,7 +186,7 @@
         </div>
         <ul>
           <li>30x20 cm</li>
-          <li>€30 / 300 SEK*</li>
+          <li>€30 / 300 SEK</li>
           <li>In stock</li>
           <li><button type="button" onClick="cartLS.add({id: 'lotus', name: 'Lotus garage', price: 300}); gtag('event', 'cart', {'event_category': 'add', 'event_label': 'lotus'});">Add to cart</button>
           <a href="#cart">Go to cart</a></li>
@@ -204,7 +204,7 @@
         </div>
         <ul>
           <li>30x20 cm</li>
-          <li>€30 / 300 SEK*</li>
+          <li>€30 / 300 SEK</li>
           <li>In stock</li>
           <li><button type="button" onClick="cartLS.add({id: 'surtees', name: 'Surtees mechanics', price: 300}); gtag('event', 'cart', {'event_category': 'add', 'event_label': 'surtees'});">Add to cart</button>
           <a href="#cart">Go to cart</a></li>
@@ -220,8 +220,8 @@
       <p>This is a private initiative. All profits, only excluding the costs for printing, postage and packaging, will be donated to organisations fighting neurological disorders –
       <a href="https://www.hjarnfonden.se/">Hjärnfonden</a> and Jackie Stewart's amazing initiative
       <a href="https://www.raceagainstdementia.com/">Race&nbsp;Against&nbsp;Dementia</a>.</p>
-      <p>Prices include shipping within the EU only. Photos in stock will be shipped within three days. Photos not in stock might take up to two weeks extra.</p>
-      <p>Payment by Swish or Paypal, details provided in confirmation e-mail.</p>
+      <p>Prices include shipping within the EU. Photos in stock will be shipped within three days. Photos not in stock might take up to two weeks extra.</p>
+      <p>Payment by Swish, Paypal or VISA/Mastercard directly to Hjärnfonden, details provided in confirmation e-mail.</p>
       <p>Please <a href="mailto:asa.samuelsson@me.com">get in touch</a> if you have any questions.</p>
       <br>
       <div class="fine">
@@ -244,8 +244,9 @@
         <p><span class="total"></span></p>
         <div class="fine">
           <h4>How to order</h4>
-            <p>Fill out and post the form. Within 24h you will get a confirmation e-mail containing payment details.
-            Your order is not binding until I have received your payment, and will be shipped immediately after.</p>
+            <p>Fill out and post the non-binding inquiry form.
+            Within 24h you will get a confirmation e-mail containing payment details.
+            Your order will be shipped immediately after I've received your payment.</p>
             <p>As soon as you have received your prints, let me know that everything is in order and
             the profits will then be donated to Hjärnfonden or Race Against Dementia.
             Please note that after that no refunds will be possible.</p>
@@ -254,10 +255,11 @@
 
       <div>
         <form
-          action="https://formspree.io/xeqrbndy"
+          action="https://submit-form.com/CNelsMYBFgce_QoB5k-u5"
           method="POST"
           autocomplete="on"
           id="checkout"
+          target="_self"
           onsubmit="gtag('event', 'checkout');"
         >
           <h4>Send an inquiry</h4>
@@ -270,13 +272,14 @@
             <input type="text" placeholder="Line 2" name="address-line2" required>
             <input type="text" placeholder="Line 3 (optional)" name="address-line3">
           <p>Preferred payment metod:</p>
-            <input type="radio" name="payment" value="swish" id="swish"><label for="swish">Swish</label><br>
-            <input type="radio" name="payment" value="paypal" id="paypal"><label for="paypal">Paypal</label>
+            <div><input type="radio" name="payment" value="swish" id="swish"><label for="swish">Swish</label></div>
+            <div><input type="radio" name="payment" value="paypal" id="paypal"><label for="paypal">Paypal</label></div>
+            <div><input type="radio" name="payment" value="insamling" id="insamling"><label for="insamling">VISA/Mastercard or Swish directly to Hjärnfonden (Sweden only, refunds not possible)</label></div>
           <p>Preferred charity:</p>
-            <input type="radio" name="charity" value="hjarnfonden" id="hjarnfonden"><label for="hjarnfonden">Hjärnfonden</label><br>
-            <input type="radio" name="charity" value="raceagainstdementia" id="raceagainstdementia"><label for="raceagainstdementia">Race Against Dementia</label>
+            <div><input type="radio" name="charity" value="hjarnfonden" id="hjarnfonden"><label for="hjarnfonden">Hjärnfonden</label></div>
+            <div><input type="radio" name="charity" value="raceagainstdementia" id="raceagainstdementia"><label for="raceagainstdementia">Race Against Dementia</label></div>
           <p>Message (optional):</p>
-            <textarea name="message"></textarea>
+          <textarea name="message"></textarea>
           <input type="hidden" name="items" id="items" value="">
 
           <button type="submit">Send</button>
@@ -311,13 +314,17 @@
       var orderitems = items.map((item) => `${item.quantity}*${item.id};`).join("")
 
       document.getElementById("items").setAttribute("value",orderitems);
-			$total.innerHTML = cartLS.total()/300 + " print(s) x €30 / 300 SEK<br>Total amount to pay: <strong>€" + cartLS.total()/10 + " / " + cartLS.total() + " SEK</strong>"
-      $contents.innerHTML = "<a href='#cart' onclick='gtag(\"event\", \"nav\", {\"event_category\": \"order\"});'><img src='cart.svg' alt='Shopping cart'><span>" + cartLS.total()/300 + "</span></a>"
+			$total.innerHTML = "Total amount to pay: <strong>€" + cartLS.total()/10 + " / " + cartLS.total() + " SEK</strong><br>(€30 / 300 SEK per print)"
+
+      var stickyCart = "<img src='cart.svg' alt='Shopping cart'><span>" + cartLS.total()/300 + "</span>";
+      //$contents.innerHTML = "<a href='#cart' onclick='gtag(\"event\", \"nav\", {\"event_category\": \"order\"});'><img src='cart.svg' alt='Shopping cart'><span>" + cartLS.total()/300 + "</span></a>"
 
       if (items.length == 0) {
         document.body.classList.remove("cart-active");
-      } else {
+        $contents.innerHTML = "<span>" + stickyCart + "</span>";
+        } else {
         document.body.classList.add("cart-active");
+        $contents.innerHTML = "<a href='#cart' onclick='gtag(\"event\", \"nav\", {\"event_category\": \"order\"});'>" + stickyCart + "</a>";
       }
 
       const images = document.querySelectorAll('.image');
