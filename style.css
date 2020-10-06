@@ -357,7 +357,7 @@ label {
   padding: 5px 10px 5px 30px;
   margin:0;
 }
-input, textarea {
+input[type="text"], textarea {
   width: 100%;
   font-family: 'Public Sans', sans-serif;
   font-size: 19px;
@@ -401,27 +401,6 @@ input.invalid:not(:focus)::placeholder {
 p.error {display: none; color:#E32636;}
 p.error.active {display: block;}
 p.error a {color:#E32636; border-color: #F1948A;}
-
-
-button,
-input,
-optgroup,
-select,
-textarea,html input[type="button"],
-input[type="reset"],
-input[type="submit"],button[disabled],
-html input[disabled],button::-moz-focus-inner,
-input::-moz-focus-inner, input[type="checkbox"],
-input[type="radio"], input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button, input[type="search"], input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-    border:none;
-    background-image:none;
-    background-color:transparent;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-}
 
 
 @media only screen and (min-width: 900px) {
