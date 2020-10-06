@@ -357,7 +357,7 @@ label {
   padding: 5px 10px 5px 30px;
   margin:0;
 }
-input[type="text"], textarea {
+input[type="text"], input[type="email"], textarea {
   width: 100%;
   font-family: 'Public Sans', sans-serif;
   font-size: 19px;
@@ -367,9 +367,6 @@ input[type="text"], textarea {
   border: 1px solid rgba(0,0,0,.2);
   outline-color: #68A8D3;
   background: transparent;
-}
-input[type="radio"] {
-  width: auto;
 }
 
 input[type="radio"], input[type="checkbox"] {
