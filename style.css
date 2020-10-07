@@ -363,11 +363,12 @@ input[type="text"], input[type="email"], textarea {
   font-size: 19px;
   color: #1B4F72;
   padding: 10px;
-  margin-top:-1px;
+  margin-top:-3px;
   border: 1px solid #68A8D3;
   outline: none;
-  background: transparent;
+  background: #fff;
   background-clip: padding-box;
+  border-radius: none;
 }
 
 input[type="radio"] {
