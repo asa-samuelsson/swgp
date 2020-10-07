@@ -354,7 +354,7 @@ label {
 }
 label {
   display: block;
-  padding: 5px 10px 5px 30px;
+  padding: 5px 10px 8px 30px;
   margin:0;
 }
 input[type="text"], input[type="email"], textarea {
@@ -363,12 +363,13 @@ input[type="text"], input[type="email"], textarea {
   font-size: 19px;
   color: #1B4F72;
   padding: 10px;
-  margin-top:-3px;
+  margin-bottom:-3px;
   border: 1px solid #68A8D3;
   outline: none;
   background: #fff;
   background-clip: padding-box;
-  border-radius: none;
+  border-radius: 0px;
+  -webkit-border-radius:0px;
 }
 
 input[type="radio"] {
