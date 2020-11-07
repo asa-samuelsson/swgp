@@ -264,7 +264,7 @@
         >
           <h4>Send an inquiry</h4>
           <p>E-mail:</p>
-            <input type="email" placeholder="Your e-mail address" class="ph-hidden" name="_replyto" autocomplete="email" required pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$">
+            <input type="email" placeholder="Your e-mail address" class="ph-hidden" name="email" autocomplete="email" required pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$">
           <p>Name:</p>
             <input type="text" placeholder="Your name" class="ph-hidden" name="name" autocomplete="name" required>
           <p>Address:</p>
@@ -272,11 +272,11 @@
             <input type="text" placeholder="Line 2" name="address-line2" required>
             <input type="text" placeholder="Line 3 (optional)" name="address-line3">
           <p>Preferred payment metod:</p>
+            <div><input type="radio" name="payment" value="insamling" id="insamling" checked="checked"><label for="insamling">VISA/Mastercard or Swish directly to Hjärnfonden (Sweden only, refunds not possible)</label></div>
             <div><input type="radio" name="payment" value="swish" id="swish"><label for="swish">Swish</label></div>
             <div><input type="radio" name="payment" value="paypal" id="paypal"><label for="paypal">Paypal</label></div>
-            <div><input type="radio" name="payment" value="insamling" id="insamling"><label for="insamling">VISA/Mastercard or Swish directly to Hjärnfonden (Sweden only, refunds not possible)</label></div>
           <p>Preferred charity:</p>
-            <div><input type="radio" name="charity" value="hjarnfonden" id="hjarnfonden"><label for="hjarnfonden">Hjärnfonden</label></div>
+            <div><input type="radio" name="charity" value="hjarnfonden" id="hjarnfonden" checked="checked"><label for="hjarnfonden">Hjärnfonden</label></div>
             <div><input type="radio" name="charity" value="raceagainstdementia" id="raceagainstdementia"><label for="raceagainstdementia">Race Against Dementia</label></div>
           <p>Message (optional):</p>
           <textarea name="message"></textarea>
