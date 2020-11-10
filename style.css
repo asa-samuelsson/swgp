@@ -104,7 +104,7 @@ li {
   font-size: 14px;
 }
 .fine {
-  font-size: 14px;
+  font-size: 16px;
 }
 a {
   color: #1B4F72;
@@ -205,7 +205,7 @@ button, .image ul a {
   background: #1B4F72;
   border: 1px solid #1B4F72;
   color: #fff;
-  padding: 10px;
+  padding: 12px;
   margin-top: 10px;
   text-transform: uppercase;
   font-size: 12px;
@@ -280,6 +280,7 @@ table {
 }
 .cart .quantity span {
   display: inline-block;
+  font-size: 16px;
   margin-left:12px;
   width:40px;
   position: relative;
@@ -371,7 +372,7 @@ form div {
 }
 form p,
 label {
-  font-size: 14px;
+  font-size: 16px;
   margin: 20px 0 0;
 }
 label {
@@ -491,7 +492,6 @@ p.error a {color:#E32636; border-color: #F1948A;}
   }
   .cart .quantity span {
     top: 8px;
-    font-size: 14px;
     margin-bottom: 10px;
   }
 }
