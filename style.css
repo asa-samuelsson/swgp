@@ -210,7 +210,7 @@ button, .image ul a {
   text-transform: uppercase;
   font-size: 12px;
   cursor: pointer;
-  border-radius: 2px;
+  border-radius: 4px;
   transition: all 0.2s ease-in-out;
   outline-color: #68A8D3;
 }
@@ -424,6 +424,13 @@ input.invalid:not(:focus)::placeholder {
   color: #E32636;
 }
 
+input + p.radio {
+  margin-top: 30px;
+}
+p.radio {
+  margin-bottom: 10px;
+}
+
 p.error {display: none; color:#E32636;}
 p.error.active {display: block;}
 p.error a {color:#E32636; border-color: #F1948A;}
@@ -486,6 +493,13 @@ p.error a {color:#E32636; border-color: #F1948A;}
     top: 8px;
     font-size: 14px;
     margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 831px) {
+  .sticky-cart .contents > a,
+  .sticky-cart .contents > span {
+    border-bottom-right-radius: 0;
   }
 }
 
