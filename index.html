@@ -304,17 +304,20 @@
 			$cart.innerHTML = items.map((item) =>
       `<tr>
 						<td class="img"><img src="${item.id}.jpg" alt="${item.name}"></td>
-						<td class="quantity">x ${item.quantity}</td>
-						<td class="buttons">
+						<td class="quantity">
+              <span>x ${item.quantity}</span>
+              <div class="buttons">
 							<button type="button" onClick="cartLS.quantity('${item.id}',-1); gtag(\'event\', \'cart\', {\'event_category\': \'quantity-decrease\', \'event_label\': '${item.id}'});"><img src='minus.svg' alt='Remove one copy'></button>
 							<button type="button" onClick="cartLS.quantity('${item.id}',1); gtag(\'event\', \'cart\', {\'event_category\': \'quantity-increase\', \'event_label\': '${item.id}'});"><img src='plus.svg' alt='Add one copy'></button>
-              <button type="button" onClick="cartLS.remove('${item.id}'); gtag(\'event\', \'cart\', {\'event_category\': \'remove\', \'event_label\': '${item.id}'});"><img src='remove.svg' alt='Remove item'></button></td>
+              <button type="button" onClick="cartLS.remove('${item.id}'); gtag(\'event\', \'cart\', {\'event_category\': \'remove\', \'event_label\': '${item.id}'});"><img src='remove.svg' alt='Remove item'></button>
+              </div>
+              </td>
 					</tr>`).join("")
 
       var orderitems = items.map((item) => `${item.quantity}*${item.id};`).join("")
 
       document.getElementById("items").setAttribute("value",orderitems);
-			$total.innerHTML = "Total amount to pay: <strong>€" + cartLS.total()/10 + " / " + cartLS.total() + " SEK</strong><br>(€30 / 300 SEK per print)"
+			$total.innerHTML = "Total amount to pay: <strong>€" + cartLS.total()/10 + "&nbsp;/&nbsp;" + cartLS.total() + "&nbsp;SEK</strong><br>(€30&nbsp;/&nbsp;300&nbsp;SEK per print)"
 
       var stickyCart = "<img src='cart.svg' alt='Shopping cart'><span>" + cartLS.total()/300 + "</span>";
       //$contents.innerHTML = "<a href='#cart' onclick='gtag(\"event\", \"nav\", {\"event_category\": \"order\"});'><img src='cart.svg' alt='Shopping cart'><span>" + cartLS.total()/300 + "</span></a>"

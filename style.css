@@ -263,27 +263,43 @@ table {
   text-transform: none;
 }
 .cart td {
-  text-align: right;
+  text-align: left;
+  vertical-align: middle;
+}
+.cart td.img {
+  padding:0;
+  width:90px;
+}
+.cart td.img img {
+  height: 60px;
+  display: block;
+  margin: 10px auto;
+}
+.cart .quantity {
+  line-height: 100%;
+}
+.cart .quantity span {
+  display: inline-block;
+  margin-left:12px;
+  width:40px;
+  position: relative;
+  top:-4px;
+}
+.cart .quantity .buttons {
+  display: inline-block;
+  width:130px;
 }
 .cart .buttons button {
+  width:40px;
+  height: 40px;
   margin: 0;
-  padding: 10px;
-  width: 30px;
+  padding: 0;
   background: none;
   border: 0;
 }
 .cart .buttons button img {
   width: 24px;
   height: 24px;
-}
-.cart td.img {
-  padding:0;
-  width:90px;
-}
-.cart img {
-  height: 60px;
-  display: block;
-  margin: 10px auto;
 }
 .sticky-cart {
   position: fixed;
@@ -462,6 +478,14 @@ p.error a {color:#E32636; border-color: #F1948A;}
     border-top: 0;
     max-width:100%;
     padding-top:0;
+  }
+  .cart .quantity span, .cart .quantity .buttons {
+    display: block;
+  }
+  .cart .quantity span {
+    top: 8px;
+    font-size: 14px;
+    margin-bottom: 10px;
   }
 }
 
