@@ -41,9 +41,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="topimage"></div>
 
   <ul class="nav">
-    <li><a href="#story" onclick="gtag('event', 'nav', {'event_category': 'story'});">The story</a></li>
-    <li><a href="#photos" onclick="gtag('event', 'nav', {'event_category': 'photos'});">The photos</a></li>
-    <li><a href="#order" onclick="gtag('event', 'nav', {'event_category': 'order'});">Order info</a></li>
+    <li><a href="#story">The story</a></li>
+    <li><a href="#photos">The photos</a></li>
+    <li><a href="#order">Order info</a></li>
   </ul>
 
   <div class="story" id="story">
@@ -93,7 +93,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li>30x20 cm</li>
           <li>€30 / 300 SEK</li>
           <li>In stock</li>
-          <li><button type="button" onClick="cartLS.add({id: 'jackiestewart', name: 'Jackie Stewart', price: 300}); gtag('event', 'cart', {'event_category': 'add', 'event_label': 'jackiestewart'});">Add to cart</button>
+          <li><button type="button" onClick="cartLS.add({id: 'jackiestewart', name: 'Jackie Stewart', price: 300});">Add to cart</button>
           <a href="#cart">Go to cart</a>
           </li>
         </ul>
@@ -113,7 +113,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li>20x30 cm</li>
           <li>€30 / 300 SEK</li>
           <li>In stock</li>
-          <li><button type="button" onClick="cartLS.add({id: 'ronniepeterson', name: 'Ronnie Peterson', price: 300}); gtag('event', 'cart', {'event_category': 'add', 'event_label': 'ronniepeterson'});">Add to cart</button>
+          <li><button type="button" onClick="cartLS.add({id: 'ronniepeterson', name: 'Ronnie Peterson', price: 300});">Add to cart</button>
           <a href="#cart">Go to cart</a></li>
         </ul>
       </div>
@@ -132,7 +132,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li>30x20 cm</li>
           <li>€30 / 300 SEK</li>
           <li>In stock</li>
-          <li><button type="button" onClick="cartLS.add({id: 'emersonfittipaldi', name: 'Emerson Fittipaldi (car)', price: 300}); gtag('event', 'cart', {'event_category': 'add', 'event_label': 'emersonfittipaldi'});">Add to cart</button>
+          <li><button type="button" onClick="cartLS.add({id: 'emersonfittipaldi', name: 'Emerson Fittipaldi (car)', price: 300});">Add to cart</button>
           <a href="#cart">Go to cart</a></li>
         </ul>
       </div>
@@ -152,7 +152,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li>30x20 cm</li>
           <li>€30 / 300 SEK</li>
           <li>In stock</li>
-          <li><button type="button" onClick="cartLS.add({id: 'grahamhill', name: 'Graham Hill', price: 300}); gtag('event', 'cart', {'event_category': 'add', 'event_label': 'grahamhill'});">Add to cart</button>
+          <li><button type="button" onClick="cartLS.add({id: 'grahamhill', name: 'Graham Hill', price: 300});">Add to cart</button>
           <a href="#cart">Go to cart</a></li>
         </ul>
       </div>
@@ -171,7 +171,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li>30x20 cm</li>
           <li>€30 / 300 SEK</li>
           <li>In stock</li>
-          <li><button type="button" onClick="cartLS.add({id: 'ronniepeterson-2', name: 'Ronnie Peterson (car)', price: 300}); gtag('event', 'cart', {'event_category': 'add', 'event_label': 'ronniepeterson-2'});">Add to cart</button>
+          <li><button type="button" onClick="cartLS.add({id: 'ronniepeterson-2', name: 'Ronnie Peterson (car)', price: 300});">Add to cart</button>
           <a href="#cart">Go to cart</a></li>
         </ul>
       </div>
@@ -190,7 +190,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li>30x20 cm</li>
           <li>€30 / 300 SEK</li>
           <li>In stock</li>
-          <li><button type="button" onClick="cartLS.add({id: 'lotus', name: 'Lotus garage', price: 300}); gtag('event', 'cart', {'event_category': 'add', 'event_label': 'lotus'});">Add to cart</button>
+          <li><button type="button" onClick="cartLS.add({id: 'lotus', name: 'Lotus garage', price: 300});">Add to cart</button>
           <a href="#cart">Go to cart</a></li>
         </ul>
       </div>
@@ -208,7 +208,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li>30x20 cm</li>
           <li>€30 / 300 SEK</li>
           <li>In stock</li>
-          <li><button type="button" onClick="cartLS.add({id: 'surtees', name: 'Surtees mechanics', price: 300}); gtag('event', 'cart', {'event_category': 'add', 'event_label': 'surtees'});">Add to cart</button>
+          <li><button type="button" onClick="cartLS.add({id: 'surtees', name: 'Surtees mechanics', price: 300});">Add to cart</button>
           <a href="#cart">Go to cart</a></li>
         </ul>
       </div>
@@ -262,7 +262,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           autocomplete="on"
           id="checkout"
           target="_self"
-          onsubmit="gtag('event', 'checkout');"
         >
           <h4>Send an inquiry</h4>
           <p>E-mail:</p>
@@ -309,9 +308,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<td class="quantity">
               <span>x ${item.quantity}</span>
               <div class="buttons">
-							<button type="button" onClick="cartLS.quantity('${item.id}',-1); gtag(\'event\', \'cart\', {\'event_category\': \'quantity-decrease\', \'event_label\': '${item.id}'});"><img src='minus.svg' alt='Remove one copy'></button>
-							<button type="button" onClick="cartLS.quantity('${item.id}',1); gtag(\'event\', \'cart\', {\'event_category\': \'quantity-increase\', \'event_label\': '${item.id}'});"><img src='plus.svg' alt='Add one copy'></button>
-              <button type="button" onClick="cartLS.remove('${item.id}'); gtag(\'event\', \'cart\', {\'event_category\': \'remove\', \'event_label\': '${item.id}'});"><img src='remove.svg' alt='Remove item'></button>
+							<button type="button" onClick="cartLS.quantity('${item.id}',-1);"><img src='minus.svg' alt='Remove one copy'></button>
+							<button type="button" onClick="cartLS.quantity('${item.id}',1);"><img src='plus.svg' alt='Add one copy'></button>
+              <button type="button" onClick="cartLS.remove('${item.id}');"><img src='remove.svg' alt='Remove item'></button>
               </div>
               </td>
 					</tr>`).join("")
@@ -322,14 +321,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			$total.innerHTML = "Total amount to pay: <strong>€" + cartLS.total()/10 + "&nbsp;/&nbsp;" + cartLS.total() + "&nbsp;SEK</strong><br>(€30&nbsp;/&nbsp;300&nbsp;SEK per print)"
 
       var stickyCart = "<img src='cart.svg' alt='Shopping cart'><span>" + cartLS.total()/300 + "</span>";
-      //$contents.innerHTML = "<a href='#cart' onclick='gtag(\"event\", \"nav\", {\"event_category\": \"order\"});'><img src='cart.svg' alt='Shopping cart'><span>" + cartLS.total()/300 + "</span></a>"
 
       if (items.length == 0) {
         document.body.classList.remove("cart-active");
         $contents.innerHTML = "<span>" + stickyCart + "</span>";
         } else {
         document.body.classList.add("cart-active");
-        $contents.innerHTML = "<a href='#cart' onclick='gtag(\"event\", \"nav\", {\"event_category\": \"order\"});'>" + stickyCart + "</a>";
+        $contents.innerHTML = "<a href='#cart'>" + stickyCart + "</a>";
       }
 
       const images = document.querySelectorAll('.image');
