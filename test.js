@@ -1,7 +1,8 @@
-
+console.log('Test script loaded');
     document.ready = function() {
-
+console.log('Test script loaded 2');
         if(dataLayer[0].country == 'se') { // targeting in Optimize should cover this
+            console.log('Test script loaded 3');
         var css,
             head = document.head,
             style = document.createElement('style'),
