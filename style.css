@@ -513,11 +513,11 @@ p.error a {color:#E32636; border-color: #F1948A;}
     margin: 30px 0;
     border-left: 0;
   }
-  .image li:last-child {
+  /*.image li:last-child {
     width: 130px;
     float: right;
     margin-top: -56px;
-  }
+  }*/
   #cart .text div {
     width: 100%;
   }
