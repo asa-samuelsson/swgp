@@ -29,7 +29,7 @@ body {
   position: absolute;
   z-index: 1;
   width: 100vw;
-  background: rgba(0,0,0,.7);
+  background: rgba(0,0,0,.65);
 }
 #header, .topimage {
   height:100vh;
