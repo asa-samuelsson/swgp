@@ -193,11 +193,11 @@ a {
   font-family: "Bungee Outline";
   font-weight: normal;
   color:#fff;
-  font-size: 5em;
+  font-size: 4.85em;
   display: block;
   float:left;
-  line-height: 0.75;
-  margin: 7px 12px 5px 0;
+  line-height: 0.7;
+  margin: 10px 12px 5px 0;
   padding: 0;
 }
 
