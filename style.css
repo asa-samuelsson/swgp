@@ -455,8 +455,9 @@ p.error a {color:#E32636; border-color: #F1948A;}
     margin: 40px 0;
     border-left: 0;
   }
-  .story .text {
-    padding:40px 4vw 80px;
+  .text {
+    padding-left: 4vw !important;
+    padding-right: 4vw !important;
   }
 }
 
