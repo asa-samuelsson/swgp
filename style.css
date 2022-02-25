@@ -437,7 +437,7 @@ p.error.active {display: block;}
 p.error a {color:#E32636; border-color: #F1948A;}
 
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 901px) {
   #ronniepeterson {
     display: flex;
     align-items: center;
@@ -454,6 +454,9 @@ p.error a {color:#E32636; border-color: #F1948A;}
     padding-left: 0;
     margin: 40px 0;
     border-left: 0;
+  }
+  .story .text {
+    padding:40px 4vw 80px;
   }
 }
 
